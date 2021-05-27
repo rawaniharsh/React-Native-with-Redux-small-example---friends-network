@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
-import { FriendsContext } from './FriendsContext';
+import { FriendsContext } from './src/FriendsContext';
 
 class FriendsScreen extends React.Component {
   render() {

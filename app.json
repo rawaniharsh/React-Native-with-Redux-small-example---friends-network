@@ -1,9 +1,9 @@
 {
-  "name": "MySocialNetwork",
-  "displayName": "MySocialNetwork",
+  "name": "ReduxReactNative",
+  "displayName": "ReduxReactNative",
   "expo": {
-    "name": "MySocialNetwork",
-    "slug": "MySocialNetwork",
+    "name": "ReduxReactNative",
+    "slug": "ReduxReactNative",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"

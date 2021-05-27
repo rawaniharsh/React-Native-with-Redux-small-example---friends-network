@@ -3,20 +3,26 @@ import React from 'react';
 import { StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { FriendsContext } from './FriendsContext';
+import { FriendsContext } from './src/FriendsContext';
 import HomeScreen from './HomeScreen';
 import FriendsScreen from './FriendsScreen';
 
+import {Provider} from 'react-redux';
+import {createStore} from 'redux';
+import friendsReducer from './src/reducers/FriendsReducers';
+
 const Stack = createStackNavigator();
+
+const store = createStore(friendsReducer);
 
 class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
       possibleFriends: [
-        'Alice',
-        'Bob',
-        'Sammy',
+        'Harsh',
+        'Rahul',
+        'Shivam',
       ],
       currentFriends: [],
     }
